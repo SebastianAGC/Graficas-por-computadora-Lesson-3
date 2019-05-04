@@ -16,7 +16,6 @@ class Obj(object):
                         lista.append(float(x))
                     self.vertices.append(lista)
 
-                    #self.vertices.append(list(map(float, value.split(' '))))
                 elif prefix == 'f':
                     lista = []
                     for face in value.split(' '):
@@ -25,4 +24,3 @@ class Obj(object):
                             lista2.append(int(f))
                         lista.append(lista2)
                     self.vfaces.append(lista)
-                    #self.vfaces.append([list(map(int, face.split('/'))) for face in value.split(' ')])
